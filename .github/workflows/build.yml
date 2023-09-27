@@ -15,7 +15,6 @@ jobs:
         run: |
           DOCKER_IMAGE=ghcr.io/tohtamysh/caddy
           TAGS="${DOCKER_IMAGE}:latest"
-          echo ::set-output name=tags::${TAGS}
       
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
